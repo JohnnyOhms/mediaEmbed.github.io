@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2dfc8161ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Media Embeded link</title>
+</head>
+<body>
+    <main>
+        <section class="main-container">
+            <div class="info-container">
+                <div class="container">
+                    <h1>Instructions</h1>
+                    <p id="line">Follow the following instruction to craete and embed tag</p>
+                    <hr>
+                    <ol>
+                        <li>
+                            <p>Select a video, image or audio from <a href="http://google.com">Google</a></p>
+                        </li>
+                        <li>
+                            <p>Right click on the file to get a link</p>
+                        </li>
+                        <li>
+                            <p>Copy link address</p>
+                        </li>
+                        <li>
+                            <p>Paste the link on the Generator and click generate</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="link-container">
+                <div class="container">
+                    <h1 id="head">Media embed Link/Tag</h1>
+                    <input type="radio" name="tab" id="first-radio" checked>
+                    <input type="radio" name="tab" id="second-radio">
+                    <input type="radio" name="tab" id="third-radio">
+                    <input type="radio" name="tab" id="fouth-radio">
+                    <nav>
+                        <label for="first-radio" class="first-radio">
+                            <i class="fa-solid fa-clipboard"></i> Paste Link</label>
+                        <label for="second-radio" class="second-radio">
+                            <i class="fa-solid fa-headphones"></i> embed Audio Tag</label>
+                        <label for="third-radio"class="third-radio">
+                            <i class="fa-solid fa-photo-film"></i> embed Video Tag</label>
+                        <label for="fouth-radio" class="fouth-radio">
+                            <i class="fa-solid fa-image"></i> embed Image Tag</label>
+                        <div id ="slide"></div>
+                    </nav>
+                    <section class="link-section">
+                        <!--download link-->
+                        <div class="content content-Glink">
+                            <i class="fa-solid fa-download"></i>
+                            <h2>Download Link</h2>
+                            <hr>
+                            <form action="">
+                                <input type="text" name="text" id="text-field" placeholder="Paste your File Link" required>
+                                <button class="btn" id="btn">Generate Link</button>
+                                <h2>Direct download Link</h2>
+                                <div class="link-field">
+                                    <textarea name="text" class="downloadlink" id="textarea" cols="30" rows="10"></textarea>
+                                    <span class="copy-link CopyDwnLink">Copy</span>
+                                </div>
+                            </form>
+                        </div>
+                        <!--embeded Audio Tag-->
+                        <div class="content content-audio">
+                            <i class="fa-solid fa-headphones"></i>
+                            <h2> Audio embeded Tag</h2>
+                            <hr>
+                            <h2>Tag to embed your audio on a webpage</h2>
+                            <form action="">
+                                <div class="link-field">
+                                    <textarea name="text" class="embedAudio" id="textarea" cols="30" rows="10"></textarea>
+                                    <span class="copy-link copyAudio">Copy</span>
+                                </div>
+                            </form>
+                        </div>
+                        <!--embeded video Tag-->
+                        <div class="content content-video">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <h2>Video embeded Tag</h2>
+                            <hr>
+                            <h2>Tag to embed your video on a webpage</h2>
+                            <form action="">
+                                <div class="link-field">
+                                    <textarea name="text" class="embedVideo" id="textarea" cols="30" rows="10"></textarea>
+                                    <span class="copy-link copyVideo">Copy</span>
+                                </div>
+                            </form>
+                        </div>
+                        <!--embeded image Tag-->
+                        <div class="content content-image">
+                            <i class="fa-solid fa-image"></i>
+                            <h2>Image embeded Tag</h2>
+                            <hr>
+                            <h2>Tag to embed your Image on a webpage</h2>
+                            <form action="">
+                                <div class="link-field">
+                                    <textarea name="text" class="embedImage" id="textarea" cols="30" rows="10"></textarea>
+                                    <span class="copy-link copyImage">Copy</span>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
